@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import { viteSingleFile } from 'vite-plugin-singlefile';
 
 export default defineConfig({
-  base: '/zero-day-of-water/',
+  base: '/',
   root: 'src',
   plugins: [
     react(),
