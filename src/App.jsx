@@ -3,8 +3,9 @@ import { formatDateJalali } from './utils/locale.js';
 import KpiCard from './components/KpiCard.jsx';
 import ProjectList from './components/ProjectList.jsx';
 import Droplet from './components/icons/Droplet.jsx';
-import PeopleRow from './components/icons/PeopleRow.jsx';
+import DamCard from './components/DamCard.jsx';
 import { kpis, projects } from './data/sample.js';
+import { dams } from './data/dams.js';
 
 export default function App(){
   const today = formatDateJalali(new Date());
@@ -19,19 +20,21 @@ export default function App(){
           subtitle={kpis.dams.subtitle}
           icon={<Droplet label="درصد پرشدگی سدها" />}
         />
-        <KpiCard
-          title="شهروندان"
-          value={kpis.residents.value}
-          trend={kpis.residents.trend}
-          subtitle={kpis.residents.subtitle}
-          icon={<PeopleRow label="درصد شهروندان کم‌مصرف" />}
-        />
       </div>
 
       <div className="hero card">
         <h2>با هم می‌توانیم از «روز صفر» جلوگیری کنیم</h2>
         <small>به‌روزرسانی: {today}</small>
       </div>
+
+      <section className="dams">
+        <h2>پایش سدها</h2>
+        <div className="dams-grid">
+          {dams.map((d) => (
+            <DamCard key={d.id} {...d} />
+          ))}
+        </div>
+      </section>
 
       <ProjectList title="پروژه‌های دیگر شهر" items={projects} />
     </div>

@@ -29,3 +29,13 @@ body{margin:0;font-family:Vazirmatn,system-ui,-apple-system,Segoe UI,Roboto,"Not
 .legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-inline-start:.35rem}
 .legend .ok i{background:var(--success)} .legend .warn i{background:var(--warning)} .legend .bad i{background:var(--danger)}
 @media (max-width:900px){.grid3{grid-template-columns:1fr}.kpi-wrap{justify-content:space-between}}
+
+.dams{margin-top:var(--space-6)}
+.dams-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-3);margin-top:var(--space-3)}
+.dam-title{font-size:var(--h3);margin:0 0 var(--space-3);color:#334155}
+.dam-body{display:flex;align-items:center;gap:var(--space-6)}
+.dam-percent{font-size:34px;font-weight:800;margin:0}
+.dam-volume{margin:.4rem 0;color:#334155}
+.dam-badge{display:inline-block;background:var(--primary-weak);color:var(--primary);padding:.2rem .5rem;border-radius:999px;font-size:var(--mono)}
+.dam-footer{margin-top:var(--space-4);color:var(--muted);font-size:var(--mono)}
+@media (max-width:900px){.dams-grid{grid-template-columns:1fr}}
