@@ -3,9 +3,9 @@ import { formatDateJalali } from './utils/locale.js';
 import KpiCard from './components/KpiCard.jsx';
 import ProjectList from './components/ProjectList.jsx';
 import Droplet from './components/icons/Droplet.jsx';
-import DamCard from './components/DamCard.jsx';
+import ReservoirCard from './components/ReservoirCard';
 import { kpis, projects } from './data/sample.js';
-import { dams } from './data/dams.js';
+import reservoirs from '../docs/data/reservoirs.json';
 
 export default function App(){
   const today = formatDateJalali(new Date());
@@ -30,8 +30,8 @@ export default function App(){
       <section className="dams">
         <h2>پایش سدها</h2>
         <div className="dams-grid">
-          {dams.map((d) => (
-            <DamCard key={d.id} {...d} />
+          {reservoirs.map((d) => (
+            <ReservoirCard key={d.id} {...d} />
           ))}
         </div>
       </section>

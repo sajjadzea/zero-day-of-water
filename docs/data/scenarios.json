@@ -1,0 +1,4 @@
+{
+  "normal": { "labelFa": "عادی", "dailyDrawMm3": 1.2 },
+  "peak":   { "labelFa": "اوج زائر", "dailyDrawMm3": 1.6 }
+}
