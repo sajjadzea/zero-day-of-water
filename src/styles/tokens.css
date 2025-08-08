@@ -1,0 +1,9 @@
+:root{
+  --bg:#f5f8fb; --card:#fff; --ink:#0f172a; --muted:#6b7280;
+  --primary:#2fa1d6; --primary-weak:#e6eef5;
+  --success:#22c55e; --warning:#f59e0b; --danger:#ef4444;
+  --ring:120px; --radius:16px; --shadow:0 8px 24px rgba(15,23,42,.06);
+  --space-1:.5rem; --space-2:.75rem; --space-3:1rem; --space-4:1.25rem;
+  --space-6:1.5rem; --space-8:2rem;
+  --h1:28px; --h2:22px; --h3:18px; --txt:15.5px; --mono:13px;
+}
