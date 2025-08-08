@@ -39,3 +39,10 @@ body{margin:0;font-family:Vazirmatn,system-ui,-apple-system,Segoe UI,Roboto,"Not
 .dam-badge{display:inline-block;background:var(--primary-weak);color:var(--primary);padding:.2rem .5rem;border-radius:999px;font-size:var(--mono)}
 .dam-footer{margin-top:var(--space-4);color:var(--muted);font-size:var(--mono)}
 @media (max-width:900px){.dams-grid{grid-template-columns:1fr}}
+.scenario-tabs{display:flex;gap:.5rem;margin-bottom:var(--space-3)}
+.scenario-tabs button{flex:1;padding:.2rem .5rem;border:none;border-radius:var(--radius);background:var(--primary-weak);cursor:pointer;font-family:inherit}
+.scenario-tabs button.active{background:var(--primary);color:white}
+.dam-uncertainty{color:var(--muted);font-size:var(--mono)}
+.yoy{margin-top:.4rem;display:flex;gap:.4rem;flex-wrap:wrap}
+.dam-badge.delta.up{background:rgba(34,197,94,.12);color:var(--success)}
+.dam-badge.delta.down{background:rgba(239,68,68,.12);color:var(--danger)}

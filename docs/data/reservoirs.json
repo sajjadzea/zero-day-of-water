@@ -1,0 +1,22 @@
+[
+  {
+    "id": "doosti",
+    "name": "سد دوستی",
+    "percent": 6,
+    "volumeNowMm3": 69,
+    "deadStorageMm3": 20,
+    "note": "نصف این موجودی مربوط به ترکمنستان است",
+    "updatedAt": "2025-08-02",
+    "yoyVolumeMm3": 123
+  },
+  {
+    "id": "torogh",
+    "name": "سد طرق",
+    "percent": 8,
+    "volumeNowMm3": 3,
+    "deadStorageMm3": 1,
+    "lessThan": true,
+    "updatedAt": "2025-08-02",
+    "yoyVolumeMm3": 5
+  }
+]
