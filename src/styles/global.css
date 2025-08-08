@@ -1,7 +1,7 @@
 @import './tokens.css';
 *{box-sizing:border-box}
 html,body,#root{height:100%}
-body{margin:0;font-family:Vazirmatn,system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans Arabic","IRANSans",Arial,sans-serif;background:var(--bg);color:var(--ink)}
+body{margin:0;font-family:Vazirmatn,system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans Arabic","IRANSans",Arial,sans-serif;background:var(--bg);color:var(--ink);direction:rtl;text-align:right}
 .container{max-width:1100px;margin:0 auto;padding:var(--space-8) var(--space-3)}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3)}
 .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:var(--space-6)}
@@ -26,6 +26,6 @@ body{margin:0;font-family:Vazirmatn,system-ui,-apple-system,Segoe UI,Roboto,"Not
 .state{font-size:var(--mono)}
 .state.ok{color:var(--success)} .state.warn{color:var(--warning)} .state.bad{color:var(--danger)}
 .legend{display:flex;gap:1rem;margin-top:.5rem;color:var(--muted);font-size:var(--mono)}
-.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-left:.35rem}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-inline-start:.35rem}
 .legend .ok i{background:var(--success)} .legend .warn i{background:var(--warning)} .legend .bad i{background:var(--danger)}
 @media (max-width:900px){.grid3{grid-template-columns:1fr}.kpi-wrap{justify-content:space-between}}
