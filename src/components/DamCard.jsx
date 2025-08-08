@@ -1,7 +1,15 @@
 import Droplet from './icons/Droplet.jsx';
 import { faNum, faDateJalali } from '../utils/locale.js';
 
-export default function DamCard({ name, percent, volumeMCM, lessThan=false, note='', updatedAt }) {
+export default function DamCard({ name, percent, volumeMCM, lessThan = false, note = '', updatedAt }) {
+  let formattedDate = '';
+  if (updatedAt) {
+    const d = new Date(updatedAt);
+    if (!isNaN(d)) {
+      formattedDate = faDateJalali(d);
+    }
+  }
+
   return (
     <div className="dam-card card">
       <h3 className="dam-title">{name}</h3>
@@ -15,7 +23,9 @@ export default function DamCard({ name, percent, volumeMCM, lessThan=false, note
           {note && <span className="dam-badge">{note}</span>}
         </div>
       </div>
-      <div className="dam-footer">آخرین به‌روزرسانی: {faDateJalali(updatedAt)}</div>
+      {formattedDate && (
+        <div className="dam-footer">آخرین به‌روزرسانی: {formattedDate}</div>
+      )}
     </div>
   );
 }
